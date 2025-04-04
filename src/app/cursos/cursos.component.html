@@ -1,0 +1,163 @@
+<style>
+  h1, h3 {
+    font-weight: 800;
+    color: #138496;
+    border-bottom: 4px solid #138496;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border: none;
+    height: 4px;
+    background-color: #138496;
+    width: 60px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .accordion-button {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0d3c42;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #138496;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .accordion-body {
+    background-color: #ffffff;
+    border-left: 4px solid #138496;
+    padding: 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+
+  .progress {
+    max-width: 80%;
+    height: 10px;
+    margin: 0 auto 16px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+  }
+
+  .progress-bar {
+    background-color: #138496;
+  }
+
+  .card {
+    border: 2px solid #138496;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .card-title {
+    color: #138496;
+    font-weight: 700;
+  }
+
+  .card-link {
+    color: #138496;
+    font-weight: 500;
+  }
+
+  .card-link:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<h1>Cursos 🧑‍🏫</h1>
+<hr>
+<p> En esta sección muestro los cursos más relevantes que he trabajado, relacionados con desarrollo web y diseño de interfaces. Los dos primeros forman parte del plan de formación asignado por el departamento, mientras que los dos últimos los realicé de forma independiente para complementar mi aprendizaje.
+<br>
+Cada curso está desplegado en el acordeón inferior, donde encontrarás detalles como el instructor, los contenidos clave y los conocimientos adquiridos.</p>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <strong>⚙️ The Modern JavaScript Bootcamp</strong> <small style="margin-left: 8px;">Andrew Mead</small>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Este curso comenzó con fundamentos bastante básicos, pero a medida que avanzaba se volvía más retador e interesante. Me ayudó a reforzar mi lógica y comprensión general de JavaScript, dándome una buena base para seguir aprendiendo. Al final no complete el curso completo ya que queria empezar el de Angular ya que me sentia con confianza para empezar ese nuevo reto.</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="max-width: 80%; margin: 0 auto; margin-bottom: 16px;">
+          <div class="progress-bar" style="width: 80%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> 
+          <strong>🧠 Legacy - Angular: De cero a experto</strong> <small style="margin-left: 8px;">Fernando Herrera</small>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Actualmente sigo avanzando en este curso, el cual ha sido muy valioso para entender Angular desde la base. Las explicaciones y prácticas del profesor me han parecido fenomenales. Sin embargo, al tratarse de una versión legacy, en ocasiones he tenido que adaptar ciertos métodos a tecnologías más actuales, lo que ha hecho que el avance sea un poco más lento comparado con otros cursos.</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="max-width: 80%; margin: 0 auto; margin-bottom: 16px;">
+          <div class="progress-bar" style="width: 35%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <strong>🎨 Google UX Design Professional Certificate</strong>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Decidí comenzar este curso por iniciativa propia, antes de que me asignaran los cursos técnicos, con la intención de mejorar mi comprensión del diseño y aplicarlo al desarrollo de interfaces. Me ha ayudado a entender conceptos clave de UX y a familiarizarme con herramientas como Figma. Aunque actualmente lo tengo en pausa por temas de carga, mi intención es retomarlo pronto y completarlo.</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="max-width: 80%; margin: 0 auto; margin-bottom: 16px;">
+          <div class="progress-bar" style="width: 25%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> 
+          <strong>🤖 4Geeks Academy - Full Stack Developer</strong>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p>Este fue el primer curso que realicé y marcó mi entrada al mundo del desarrollo web. Aprendí las bases de HTML, CSS y JavaScript, además de fundamentos de backend con Python y manejo de bases de datos. Gracias a este programa descubrí mi interés por la programación.</p>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="max-width: 80%; margin: 0 auto; margin-bottom: 16px;">
+          <div class="progress-bar" style="width: 100%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr><br>
+<h3>Interes de cursos a futuro 🌱</h3>
+<hr>
+<p>En esta sección destaco algunos cursos que tengo en la mira para continuar mi formación profesional. Considero importante mantenerme actualizado y seguir profundizando en tecnologías modernas y buenas prácticas.</p>
+
+<div class="card" style="max-width: 600px; margin: 0 auto 20px auto;">
+  <div class="card-body">
+    <h5 class="card-title">React Native - The Practical Guide [2025]</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Instructor: Maximilian Schwarzmüller</h6>
+    <p class="card-text">
+      Me interesa realizar este curso porque React Native permite desarrollar aplicaciones móviles utilizando JavaScript y React. Considero que es una excelente oportunidad para comenzar a explorar el mundo del desarrollo móvil y expandir mis habilidades más allá del entorno web.
+    </p>
+    <a href="https://www.udemy.com/share/101WwK3@BReiFQFRavVolBlQnNEr0nCMp0_2APxJ-6MrqMDVG0wn8FgGEr6CA-j8UuTfG2nt/" target="_blank" class="card-link">Ver curso en Udemy</a>
+  </div>
+</div>

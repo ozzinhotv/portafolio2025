@@ -1,0 +1,65 @@
+<style>
+  .navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #138496;
+}
+
+/* Aquí forzamos el color activo */
+.navbar .nav-link.active,
+.navbar .nav-item .nav-link.router-link-active {
+  color: #138496 !important;
+  border-bottom: 2px solid #138496;
+}
+
+  .form-control {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #495057;
+  }
+
+  .form-control::placeholder {
+    color: #adb5bd;
+  }
+
+  .btn-outline-success {
+    color: #138496;
+    border-color: #138496;
+    transition: all 0.2s ease;
+  }
+
+  .btn-outline-success:hover {
+    background-color: #138496;
+    color: white;
+    border-color: #138496;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/andromeda.png" alt="Bootstrap" width="30" height="24">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['']">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['curso']">Curso</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['proyectos']">Proyectos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['trayectoria']">Trayectoria</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

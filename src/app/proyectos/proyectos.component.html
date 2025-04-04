@@ -1,0 +1,96 @@
+<style>
+  h1 {
+    font-weight: 800;
+    color: #138496;
+    border-bottom: 4px solid #138496;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  hr {
+    border: none;
+    height: 4px;
+    background-color: #138496;
+    width: 60px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 350px;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border: 2px solid #138496;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-title {
+    color: #138496;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+
+  .card-text.text-muted {
+    color: #138496 !important;
+    font-weight: 500;
+  }
+
+  .card-footer {
+    padding: 1rem;
+  }
+
+  .btn-outline-primary {
+    border-color: #138496;
+    color: #138496;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #138496;
+    color: #fff;
+  }
+
+  .row-cols-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+</style>
+
+<h1>Proyectos 🚧</h1>
+<hr>
+
+<div class="container my-5">
+  <div class="row row-cols-1 g-4">
+    <div class="col" *ngFor="let proyecto of proyectos">
+      <div class="card h-100">
+        <img [src]="proyecto.imagen" class="card-img-top" alt="Imagen del proyecto" />
+        <div class="card-body">
+          <h5 class="card-title">{{ proyecto.titulo | uppercase}}</h5>
+          <p class="card-text text-muted small mb-1">{{ proyecto.librerias }}</p>
+          <p class="card-text">{{ proyecto.descripcion }}</p>
+        </div>
+        <div class="card-footer bg-white border-0">
+          <button *ngIf="proyecto.verDetalles" class="btn btn-sm btn-outline-primary w-100" (click)="verDetalles(proyecto)">
+            Ver más
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

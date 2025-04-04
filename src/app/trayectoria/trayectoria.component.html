@@ -1,0 +1,225 @@
+<style>
+  h1, h2 {
+    font-weight: 800;
+    color: #138496;
+    border-bottom: 4px solid #138496;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 1.2rem;
+  }
+
+  hr {
+    border: none;
+    height: 4px;
+    background-color: #138496;
+    width: 60px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav-tabs .nav-link {
+    font-weight: 600;
+    color: #495057;
+    border: none;
+    border-bottom: 4px solid transparent;
+    padding: 0.8rem 1.2rem;
+  }
+
+  .nav-tabs .nav-link.active {
+    color: #138496;
+    border-bottom: 4px solid #138496;
+    background-color: transparent;
+  }
+
+  .tab-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Certificados */
+  .card {
+    border: 2px solid #138496;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card-title {
+    color: #138496;
+    font-weight: 600;
+  }
+
+  /* Tabla de documentos */
+  table {
+    border: 2px solid #138496;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+
+  thead {
+    background-color: #138496;
+    color: white;
+  }
+
+  th, td {
+    padding: 12px 16px;
+    vertical-align: middle;
+  }
+
+  td a {
+    color: #138496;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  td a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botones */
+  .btn-outline-primary {
+    border-color: #138496;
+    color: #138496;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #138496;
+    color: #fff;
+  }
+
+  .btn-primary {
+    background-color: #138496;
+    border-color: #138496;
+    font-weight: 500;
+  }
+
+  .btn-primary:hover {
+    background-color: #0f6c77;
+    border-color: #0f6c77;
+  }
+</style>
+
+
+<h1>Trayectoria 🚀</h1>
+<hr>
+<ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#experiencia">Experiencia 💼</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#certificados">Certificados 🎓</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#documentos">Documentos 📁</a>
+    </li>
+  </ul>
+  
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="experiencia">
+  
+      <p>
+      Desde 2022 formo parte del equipo de <strong>Andrómeda Ventures</strong>, donde he tenido la oportunidad de crecer profesionalmente dentro del área de Finanzas. Comencé como pasante y con el tiempo me fui involucrando en tareas clave como conciliaciones bancarias, facturación masiva, control de movimientos contables y atención al cliente. Esta experiencia me permitió desarrollar una visión integral del funcionamiento de las operaciones financieras dentro de una empresa tecnológica.  
+      </p>
+      <p>
+      Gracias a este recorrido, también pude identificar mi interés por el desarrollo web, lo que me llevó a formarme como Full Stack Developer y comenzar mi transición hacia el área de Tecnología.
+      </p>
+      
+      <!-- Enlaces a documentos relevantes -->
+      <div class="mt-4">
+        <a href="https://www.linkedin.com/in/oscar-thielen-villanueva-74b105186/?originalSubdomain=ve" target="_blank" class="btn btn-outline-primary me-2">Ver perfil en Linkedin</a>
+        <a href="https://drive.google.com/file/d/1GDLMK0-W5aKD2A0wfOHLvuY_k05NkEMp/view?usp=sharing" target="_blank" class="btn btn-primary">Abrir CV</a>
+      </div>
+      
+    </div>
+    <div class="tab-pane fade" id="certificados">
+      <!-- Aquí colocas cards con diplomas -->
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="assets/4geeks.png" class="card-img-top" alt="4geeks">
+            <div class="card-body">
+              <h5 class="card-title">Certificado 1</h5>
+              <p class="card-text">Descripción del certificado 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="assets/chatgptFinanzas.png" class="card-img-top" alt="ChatGpt en Finanzas">
+            <div class="card-body">
+              <h5 class="card-title">Certificado 2</h5>
+              <p class="card-text">Descripción del certificado 2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="assets/clickUp.png" class="card-img-top" alt="clickUp">
+            <div class="card-body">
+              <h5 class="card-title">Certificado 3</h5>
+              <p class="card-text">Descripción del certificado 3.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Agrega más tarjetas según sea necesario -->
+      </div>
+    </div>
+    <div class="tab-pane fade" id="documentos">
+      <!-- Aquí colocas tu vista tipo Drive -->
+      <p>En esta sección se encuentran algunos de los documentos más relevantes que he generado o recopilado durante mi trayectoria en la empresa. Todos los archivos están alojados en Google Drive y organizados por año.</p>
+
+      <table class="table table-striped mt-3">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Enlace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Informe Andromeda</td>
+            <td>2024</td>
+            <td><a href="https://docs.google.com/document/d/158W4NUgGMa3-sancfoVSy2g5YLm0S8fQ/edit?usp=sharing&ouid=112047790196349309038&rtpof=true&sd=true" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Actividades y procesos recurrentes de Oscar Thielen</td>
+            <td>2024</td>
+            <td><a href="https://docs.google.com/document/d/17AuDbypyl433H83C8yhydkHAaJnE68zmJsZLu3oJG_8/edit?usp=sharing" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Instructivo de crear los asientos contables para Gre-5 y movilway, y los comercios de Botón de pago.</td>
+            <td>2024</td>
+            <td><a href="https://docs.google.com/document/d/1ST95mDdvtxVHob485Gnpw8PgNlam9hZoEOZXq_SCT5I/edit?usp=sharing" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Cypress 2025</td>
+            <td>2025</td>
+            <td><a href="https://docs.google.com/document/d/1FmImatTpQujysiKc6CVJDZE9ZjtKmRJIq1PN3CZaFqU/edit?usp=sharing" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Optimizacion de QA</td>
+            <td>2024</td>
+            <td><a href="https://docs.google.com/document/d/1nx4qArZ2a9oi3XJYOama8e8XTUwWm3CjSXNDmmSN31M/edit?usp=sharing" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>PLAN DE TRABAJO IRENE ROSALES</td>
+            <td>2024</td>
+            <td><a href="https://docs.google.com/document/d/1LNE5hRLyxfTlp4YGN0xunYvlxBJjp1As/edit?usp=sharing&ouid=112047790196349309038&rtpof=true&sd=true" target="_blank">Ver</a></td>
+          </tr>
+          <tr>
+            <td>Actividades Oscar Thielen Finanzas</td>
+            <td>2022-2024</td>
+            <td><a href="https://drive.google.com/drive/folders/1o45t_LXIOMut2U9g6MzePX4qqi8oYKy6?usp=drive_link" target="_blank">Ver</a></td>
+          </tr>
+          <!-- Agrega más filas según necesites -->
+        </tbody>
+      </table>
+    </div>
+  </div>
